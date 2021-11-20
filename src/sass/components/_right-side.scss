@@ -1,0 +1,132 @@
+.title-description{
+  .title {
+    margin-bottom: 30px;
+    span{
+      color: #CB253C;
+      font-size: 13px;
+      font-weight: normal;
+    }
+    p{
+      font-size: 27px;
+      color: #6B7280;
+    }
+  }
+  .price{
+    span{
+      color: #6B7280;
+      font-size: 13px;
+    }
+    p{
+      font-size: 40px;
+      color: #111111;
+    }
+  }
+
+  h2{
+    font-size: 39px;
+  }
+}
+
+.container-details{
+  margin-top: 30px;
+}
+.details-title{
+  display: flex;
+  margin-bottom: 20px;
+  span{
+    display: block;
+    margin-right: 20px;
+    font-size: 19px;
+    color: #6B7280;
+    cursor: pointer;
+    &.active{
+      color: #111111;
+      border-bottom: 2px solid #111111;
+    }
+  }
+}
+.details-description{
+  p{
+    color: #6B7280;
+    font-size: 16px;
+  }
+}
+
+.container-colors{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+  margin-top: 30px;
+
+  .item-color{
+    border: 2px solid #EEEFF2;
+    border-radius: 10px;
+    padding: 20px;
+    span{
+      font-size: 14px;
+      font-family: $circularMedium;
+      display: block;
+      margin-bottom: 10px;
+    }
+    p{
+      font-size: 14px;
+      color: #6B7280;
+    }
+  }
+
+  span{
+    color: #111111;
+    grid-column: 1 / -1;
+    font-size: 19px;
+    font-family: $circularMedium;
+  }
+}
+
+.container-warranty, .container-features{
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  .container-item{
+    padding: 20px;
+    border: 2px solid #EEEFF2;
+    margin-bottom: 10px;
+    border-radius: 10px;
+  }
+  span{
+    font-size: 19.2px;
+    color: #111111;
+    margin-bottom: 15px;
+    font-weight: 400;
+  }
+  p{
+    color: #6B7280;
+  }
+}
+.container-features{
+  .container-item{
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.container-specs{
+  margin: 30px 0;
+
+  .item-specs{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #EEEFF2;
+    padding: 20px 0;
+  }
+
+  .title{
+    display: block;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #EEEFF2;
+    font-size: 19px;
+  }
+  span{
+    font-size: 14px;
+    color: #111111;
+  }
+}

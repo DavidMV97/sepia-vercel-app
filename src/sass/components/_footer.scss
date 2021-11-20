@@ -1,0 +1,37 @@
+footer{
+  background: #F5F5F7;
+}
+.footer{
+  @include page-width-default($desktop);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 152px;
+
+  @media(max-width: $mobile){
+    flex-direction: column;
+  }
+  
+  h2{
+    font-size: 14px;
+    color: #111111;
+  }
+  p{
+    color: #6B7280;
+  }
+  .buy-now{
+    display: flex;
+    button{
+      background: #1E96D4; 
+      border: none;
+      background: #1E96D4;
+    border: none;
+    color: white;
+    border-radius: 6px;
+    padding: 20px 30px;
+    }
+  }
+  .button-buy{
+    margin-left: 20px;
+  }
+}
