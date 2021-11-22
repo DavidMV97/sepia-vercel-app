@@ -1,8 +1,12 @@
-header{
-  @include page-width-default($desktop);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-bottom: 1px solid #EEEFF2;
-  margin-bottom: 25px;
+header {
+    @include page-width-default($desktop);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+    .logo {
+        width: 100%;
+        border-bottom: 1px solid #EEEFF2;
+        text-align: center;
+    }
 }

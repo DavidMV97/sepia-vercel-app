@@ -1,37 +1,92 @@
-footer{
-  background: #F5F5F7;
+footer {
+    background: #F5F5F7;
+    margin-top: 80px;
+    // @media(min-width: $desktop) {
+    //     position: fixed;
+    //     bottom: 0;
+    //     left: 0;
+    //     right: 0;
+    // }
 }
-.footer{
-  @include page-width-default($desktop);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 152px;
 
-  @media(max-width: $mobile){
-    flex-direction: column;
-  }
-  
-  h2{
-    font-size: 14px;
-    color: #111111;
-  }
-  p{
-    color: #6B7280;
-  }
-  .buy-now{
+.footer {
+    @include page-width-default($desktop);
     display: flex;
-    button{
-      background: #1E96D4; 
-      border: none;
-      background: #1E96D4;
-    border: none;
-    color: white;
-    border-radius: 6px;
-    padding: 20px 30px;
+    justify-content: space-between;
+    align-items: center;
+    height: 182px;
+    @media(min-width: $medium) {
+        height: 112px;
     }
-  }
-  .button-buy{
-    margin-left: 20px;
-  }
+    @media(min-width: $desktop) {
+        height: 152px;
+    }
+    .footer-left {
+        height: 100%;
+        width: 50%;
+        display: none;
+        flex-direction: column;
+        padding: 20px 0;
+        justify-content: space-between;
+        @media(min-width: $medium) {
+            display: flex;
+        }
+        @media(min-width: $desktop) {
+            flex-direction: row;
+            align-items: center;
+        }
+    }
+    .item-footer {
+        display: none;
+        @media(min-width: $medium) {
+            display: block;
+            flex: 0 49%;
+        }
+        p {
+            display: none;
+            @media(min-width: $desktop) {
+                display: block;
+            }
+        }
+    }
+    .buy-now {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: right;
+        padding: 20px 0;
+        width: 100%;
+        height: 100%;
+        @media(min-width: $medium) {
+            width: 50%;
+            flex-direction: row;
+            justify-content: flex-end;
+            align-items: center;
+        }
+        span {
+            font-size: 27px;
+            font-family: $circularStdBold;
+        }
+        button {
+            background: $mainBlue;
+            border: none;
+            color: white;
+            border-radius: 6px;
+            padding: 19px 24px;
+            font-weight: bold;
+            font-size: 16px;
+            @media(min-width: $medium) {
+                margin-left: 30px;
+            }
+        }
+    }
+    h2 {
+        font-size: 14px;
+        color: $black;
+        font-weight: 500;
+        margin-bottom: 10px;
+    }
+    p {
+        color: #6B7280;
+    }
 }

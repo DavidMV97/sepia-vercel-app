@@ -1,21 +1,39 @@
-
-
-body, p{
-  font-family: $circularStdBook;
+html {
+    box-sizing: border-box;
 }
-h1,h2,h3,h4,h5,h6,p{
-  margin: 0;
+
+*,
+*::before,
+*::before {
+    box-sizing: inherit;
 }
-.main-container{
-  @include page-width-default($desktop);
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 30px;
-  
-  @media (max-width: $mobile) {
-    @include page-width-default($mobile);
-    display: flex;
+
+body,
+p {
+    font-family: $circularStdBook;
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+main {
+    overflow-x: hidden;
+}
+
+.main-container {
+    @include page-width-default($desktop);
+    display: grid;
     grid-template-columns: 1fr;
+    grid-gap: 30px;
+    @media (min-width: $desktop) {
+        grid-template-columns: 1fr 1fr;
+    }
 }
-}
-
